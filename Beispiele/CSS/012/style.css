@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "ORF ON",Arial,Helvetica,Lucida Sans Unicode,Lucida Grande,sans-serif;
+    font-feature-settings: "liga", "kern";
+
+}
+
+.orfsite{
+    display: flex;
+    flex-direction: row;
+    background-color:#D0D3D4 ;
+}
+.leftborder{
+    width: 8em;
+    height: 2000px;
+    background-color:#D0D3D4 ;
+}
+.rightborder{
+    width: 100%;
+    background-color: #D0D3D4;
+}
+
+.container{
+    width: 875px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    background-color: #790000;
+    color: white;
+    height: 27px;
+    align-items: center;
+}
+a{
+    color: white;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style-type: none;
+    width: 80%;
+
+}
+
+.topright{
+    display: flex;
+    margin: 5px;
+}
+
+.middle{
+    display: flex;
+    background-color: #BB131A;
+    height: 90px;
+    color: white;
+    align-items: center;
+}
+.abstand{
+    width: 25px;
+}
+.text{
+    width: 124px;
+    height: 29px;
+}
+
+.logo{
+    width: 100px;
+}
+
+
+p1{
+    color: white;
+    position: relative;
+    margin: 5px;
+    font-size: 25px;
+}
+
+
+.bottom{
+    display: flex;
+    align-items: center;
+    background-color: #790000;
+    color: white;
+    height: 25px;
+}
+.covidtest{
+    height: 350px;
+}
+.test{
+    height: 350px;
+}
+.image{
+    width: 100px;
+}
+
+.bottomtext{
+    position: relative;
+    background-color: white;
+    margin-left: 7em;
+    margin-right: 7em;
+    margin-top: 1em;
+    height: 60vh;
+}
+.keyword{
+    padding: 1.25rem;
+    
+}
+p2{
+    color: gray;
+}
+.bottomheader{
+    padding: 1.25rem;
+}
+.bottomstory{
+    padding: 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+}

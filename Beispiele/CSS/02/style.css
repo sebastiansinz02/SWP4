@@ -1,0 +1,18 @@
+/*ELEMENT Selektor*/
+div{
+    background-color: aqua;
+}
+
+/*id selector*/
+#header{
+    font-size: 2rem;
+}
+
+/* Klassenselector */
+.subtitle{
+    color: blue;
+}
+
+#text p {
+    background-color: blueviolet;
+}
