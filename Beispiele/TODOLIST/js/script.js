@@ -19,16 +19,25 @@ function addTask() {
 function pritnTastList() {
     document.getElementById("taskList").innerHTML = getHTMLTasks();;
 }
-
+function markTask(){
+    alert("marking");
+}
 function getHTMLTasks() {
     var html = "";
+    var index=0;
     tasks.forEach(element => {
         var checked="";
         if (element.isDone){
             checked = "checked"
         }
-        html += "<li><input type='checkbox'" + checked + "/>" + element.isDone + "-" + element.name + "- " + element.responsible + "</li>";
+        html += "<li><input onClick='markTask()' name='checkbox' data-index='"+ index+ "' type='checkbox'" + checked + "/>" + element.name + "- " + element.responsible +"-"+index+ "</li>";
         console.log(element);
+        index++;
     });
     return html;
+}
+
+
+function test(){
+    alert("tesst");
 }
