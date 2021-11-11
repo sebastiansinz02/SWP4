@@ -1,13 +1,20 @@
+const tasks = [];
+console.log(tasks);
 
-const tasks = ["putzen", "tanzen", "kochen"];
 pritnTastList();
 
 
 document.getElementById("addTask").addEventListener("click", function () {
-    var newTask = document.getElementById("txtNewTask").value
-    tasks.push(newTask);
-    pritnTastList();
+    addTask();
 });
+
+function addTask() {
+    var taskName = document.getElementById("txtNewTask").value
+    var taskResponsible = document.getElementById("txtResponsible").value
+    var task = { name: taskName, responsible: taskResponsible, isDone: false };
+    tasks.push(task);
+    pritnTastList();
+}
 
 function pritnTastList() {
     document.getElementById("taskList").innerHTML = getHTMLTasks();;
@@ -16,7 +23,11 @@ function pritnTastList() {
 function getHTMLTasks() {
     var html = "";
     tasks.forEach(element => {
-        html += "<li>" + element + "</li>";
+        var checked="";
+        if (element.isDone){
+            checked = "checked"
+        }
+        html += "<li><input type='checkbox'" + checked + "/>" + element.isDone + "-" + element.name + "- " + element.responsible + "</li>";
         console.log(element);
     });
     return html;
