@@ -19,25 +19,26 @@ function addTask() {
 function pritnTastList() {
     document.getElementById("taskList").innerHTML = getHTMLTasks();;
 }
-function markTask(){
-    alert("marking");
+function markTask() {
+    var index = + element.attributes["data-index"].value;
+    var isChecked = element.checked;
+
+    tasks[index].isDone = isChecked;
+    pritnTastList();
 }
 function getHTMLTasks() {
     var html = "";
-    var index=0;
+    var index = 0;
+
     tasks.forEach(element => {
-        var checked="";
-        if (element.isDone){
+        var checked = "";
+        if (element.isDone) {
             checked = "checked"
         }
-        html += "<li><input onClick='markTask()' name='checkbox' data-index='"+ index+ "' type='checkbox'" + checked + "/>" + element.name + "- " + element.responsible +"-"+index+ "</li>";
+        html += "<li><input onClick='markTask()' name='checkbox' data-index='" + index + "' type='checkbox'" + checked + "/>" + element.name + "- " + element.responsible + "-" + index + "</li>";
         console.log(element);
         index++;
     });
     return html;
 }
 
-
-function test(){
-    alert("tesst");
-}
