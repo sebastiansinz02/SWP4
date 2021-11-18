@@ -27,7 +27,7 @@ function markTask() {
     pritnTastList();
 }
 function getHTMLTasks() {
-    var html = "";
+    var html = " ";
     var index = 0;
 
     tasks.forEach(element => {
