@@ -13,6 +13,7 @@ function addTask() {
     var taskResponsible = document.getElementById("txtResponsible").value
     var task = { name: taskName, responsible: taskResponsible, isDone: false };
     tasks.push(task);
+
     pritnTastList();
 }
 
@@ -21,6 +22,7 @@ function pritnTastList() {
 }
 
 function markTask(element) {
+
     alert("marking Task" + element.checked + element.attributes["date-index"].value);
 }
 
@@ -31,7 +33,7 @@ function getHTMLTasks() {
     tasks.forEach(element => {
         var checked = "";
         if (element.isDone) {
-            checked = "checked"
+            checked = "checked";
         }
         html += "<li><input onClick='markTask(this)' name='checkbox' data-index='" + index + "' type='checkbox'" + checked + "/>" + element.name + "- " + element.responsible + "-" + index + "</li>";
         index++;
