@@ -17,14 +17,9 @@ function addTask() {
 }
 
 function pritnTastList() {
-    document.getElementById("taskList").innerHTML = getHTMLTasks();;
+    document.getElementById("taskList").innerHTML = getHTMLTasks();
 }
 function markTask() {
-    var index = + element.attributes["data-index"].value;
-    var isChecked = element.checked;
-
-    tasks[index].isDone = isChecked;
-    pritnTastList();
 }
 function getHTMLTasks() {
     var html = " ";
@@ -36,9 +31,12 @@ function getHTMLTasks() {
             checked = "checked"
         }
         html += "<li><input onClick='markTask()' name='checkbox' data-index='" + index + "' type='checkbox'" + checked + "/>" + element.name + "- " + element.responsible + "-" + index + "</li>";
-        console.log(element);
         index++;
     });
     return html;
 }
 
+
+function test(){
+    alert("test");
+}
