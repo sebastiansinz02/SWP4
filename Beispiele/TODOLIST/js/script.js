@@ -4,7 +4,7 @@ console.log(tasks);
 pritnTastList();
 
 
-document.getElementById("addTask").addEventListener("click", function () {
+document.getElementById("addTask").addEventListener("click", function() {
     addTask();
 });
 
@@ -19,9 +19,11 @@ function addTask() {
 function pritnTastList() {
     document.getElementById("taskList").innerHTML = getHTMLTasks();
 }
-function markTask() {
-    alert("marking Task")
+
+function markTask(element) {
+    alert("marking Task" + element.checked + element.attributes["date-index"].value);
 }
+
 function getHTMLTasks() {
     var html = " ";
     var index = 0;
@@ -31,13 +33,8 @@ function getHTMLTasks() {
         if (element.isDone) {
             checked = "checked"
         }
-        html += "<li><input onClick='markTask()' name='checkbox' data-index='" + index + "' type='checkbox'" + checked + "/>" + element.name + "- " + element.responsible + "-" + index + "</li>";
+        html += "<li><input onClick='markTask(this)' name='checkbox' data-index='" + index + "' type='checkbox'" + checked + "/>" + element.name + "- " + element.responsible + "-" + index + "</li>";
         index++;
     });
     return html;
-}
-
-
-function test(){
-    alert("test");
 }
