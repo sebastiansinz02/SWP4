@@ -20,6 +20,7 @@ function pritnTastList() {
     document.getElementById("taskList").innerHTML = getHTMLTasks();
 }
 function markTask() {
+    alert("marking Task")
 }
 function getHTMLTasks() {
     var html = " ";
