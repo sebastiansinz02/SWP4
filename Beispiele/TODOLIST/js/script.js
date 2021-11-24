@@ -1,7 +1,7 @@
 const tasks = [];
 console.log(tasks);
 
-pritnTastList();
+printTaskList();
 
 
 document.getElementById("addTask").addEventListener("click", function() {
@@ -14,10 +14,10 @@ function addTask() {
     var task = { name: taskName, responsible: taskResponsible, isDone: false };
     tasks.push(task);
 
-    pritnTastList();
+    printTaskList();
 }
 
-function pritnTastList() {
+function printTaskList() {
     document.getElementById("taskList").innerHTML = getHTMLTasks();
 }
 
