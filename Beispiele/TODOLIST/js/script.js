@@ -21,9 +21,9 @@ function pritnTastList() {
     document.getElementById("taskList").innerHTML = getHTMLTasks();
 }
 
-function markTask(element) {
+function markTask() {
 
-    alert("marking Task" + element.checked + element.attributes["date-index"].value);
+    alert("marking Task");
 }
 
 function getHTMLTasks() {
