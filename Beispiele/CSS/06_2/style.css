@@ -1,4 +1,4 @@
-.topcontainer{
+.topcontainer {
     background-color: yellow;
     display: flex;
     flex-direction: row-reverse;
@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.box{
+.box {
     background-color: green;
     display: flex;
     width: 30px;
@@ -14,7 +14,7 @@
     margin: 50px;
 }
 
-.bottomcontainer{
+.bottomcontainer {
     background-color: lightblue;
     display: flex;
     flex-direction: column;
@@ -23,15 +23,14 @@
     margin: 20px;
 }
 
-
-.right{
+.right {
     position: relative;
     height: 100%;
     width: 100%;
 }
 
-.brown{
-    background-color:brown;
+.brown {
+    background-color: brown;
     position: absolute;
     height: 100px;
     width: 100px;
