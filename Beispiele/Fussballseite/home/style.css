@@ -1,17 +1,15 @@
-.topcontainer {
-    background-color: #40916C;
+.topbackground {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 141px;
-}
-
-.box {
     background-color: #52B788;
-    display: flex;
-    height: 70px;
-    width: 100%;
+    height: 110px;
 }
 
-.tet
+.topgreen {
+    background-color: #40916C;
+    height: 30px;
+    width: 100vw;
+}
+
+p1 {
+    margin-top: 20px;
+}
