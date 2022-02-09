@@ -9,7 +9,7 @@ function loadTabelle() {
         .then(function(data) {
             let html = "";
             data.forEach(element => {
-                html += "<li>" + element.TeamName + "</li>";
+                html += "<li>" + element.TeamName + " Punkte: " + element.Points+ "</li>";
 
             });
             document.getElementById("table").innerHTML = html;

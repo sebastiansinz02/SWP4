@@ -1,31 +1,31 @@
 .topbackground {
-    display: flex;
-    background-color: #52B788;
-    height: 110px;
+  display: flex;
+  background-color: #52b788;
+  height: 110px;
 }
 
 .topgreen {
-    background-color: #40916C;
-    height: 30px;
-    width: 100vw;
+  background-color: #40916c;
+  height: 30px;
+  width: 100vw;
 }
 
 p1 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .seiten {
-    display: flex;
+  display: flex;
 }
 
 ul {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 li {
-    display: flex;
-    list-style: none;
-    margin: 10px;
-    flex-direction: row;
+  display: flex;
+  list-style: none;
+  margin: 10px;
+  flex-direction: row;
 }
