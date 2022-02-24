@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import styles from "./SupperButton.module.css";
 
 export default class SupperButton extends Component {
   render() {
     return (
-      <div>
+      <div className={styles.heading}>
         <button>Button</button>
       </div>
     );
