@@ -5,7 +5,7 @@ export default class SupperButton extends Component {
   render() {
     return (
       <div className={styles.heading}>
-        <button>Button</button>
+        <button>Sendar</button>
       </div>
     );
   }
