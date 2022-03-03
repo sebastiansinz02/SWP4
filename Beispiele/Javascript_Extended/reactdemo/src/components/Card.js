@@ -6,9 +6,11 @@ export default class List extends Component {
   render() {
     return (
       <div className={styles.card}>
-        <image></image>
-        <h2>John Doe</h2>
-        <p>Architect & Engineer</p>
+        <img src="./img_avatar.png"></img>
+        <div className={styles.text}>
+          <h2>John Doe</h2>
+          <p1>Architect & Engineer</p1>{" "}
+        </div>
       </div>
     );
   }
