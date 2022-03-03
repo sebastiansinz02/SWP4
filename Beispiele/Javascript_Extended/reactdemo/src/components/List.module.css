@@ -1,14 +1,19 @@
 .heading {
   display: flex;
-  background-color: teal;
-  width: 200px;
 }
 ul {
+  display: inline;
   list-style: none;
 }
 
 li {
+  background-color: teal;
   color: white;
+  justify-content: space-around;
+
+  margin: 1px;
+  width: 150px;
+  height: 50px;
 }
 
 li:hover {
