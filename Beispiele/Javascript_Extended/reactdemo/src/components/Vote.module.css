@@ -2,6 +2,7 @@
   background-color: aqua;
   min-height: 50px;
   width: 200px;
+  margin-right: 10px;
 }
 
 .card:hover {
