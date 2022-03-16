@@ -1,0 +1,9 @@
+.card {
+  background-color: aqua;
+  min-height: 50px;
+  width: 200px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
