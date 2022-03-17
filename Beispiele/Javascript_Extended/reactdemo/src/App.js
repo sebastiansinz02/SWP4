@@ -1,17 +1,13 @@
 import "./App.css";
-import Vote from "./components/Vote";
+import Counter from "./components/Counter";
+import CounterFunc from "./components/CounterFunc";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <h1 class="heading"> My Stuff</h1>
-      <div class="container">
-        <Vote candidate="Sebi" address="Doren" />
-        <Vote candidate="Manni" address="Reuthe " />
-        <Vote candidate="Eric" address="Doren" />
-      </div>
+    <div>
+      Functional Component
+      <Counter />
+      <CounterFunc />
     </div>
   );
 }
-
-export default App;
